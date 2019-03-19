@@ -1,10 +1,8 @@
 import socket
 
-serverHOST = str(input('ip:'))
-serverPORT = int(input('porta:'))
 
-#serverHOST = '127.0.0.1'
-#serverPORT = 5000
+serverHOST = '127.0.0.1'
+serverPORT = 5000
 
 
 mensagem = [b'Ola mundo xxxx']
