@@ -5,7 +5,7 @@ tcp = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 HOST = '127.0.0.1'
 PORT = 5000
 
-print('Iniciado serviço')
+print('Iniciado serviço ...')
 
 try:
     tcp.bind((HOST, PORT))
