@@ -9,8 +9,7 @@ print('Iniciado serviço ...')
 
 try:
     tcp.bind((HOST, PORT))
-    #número de cliente que pode lidar por vez
-    tcp.listen(1)
+    tcp.listen(1) #número de cliente que pode lidar por vez
 except socket.error as e:
     print(str(e))
 
