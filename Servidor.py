@@ -20,6 +20,5 @@ while True:
     while True:
         dados = con.recv(1024) #recebe e armazena a mensagem do cliente
         if not dados: break
-        #print(cliente, dados)
         con.send(b'......:'+ dados) #retorna o dado enviado pelo cliente
 con.close()
