@@ -34,7 +34,7 @@ request = {
     'Host: ' : host,
     'Connection: ' : 'keep-alive',
     'Upgrade-Insecure-Requests: ' : '1',
-    'User-Agent: ' : 'jaoClient',
+    'User-Agent: ' : 'Client',
     'Acept-Encoding: ' : 'gzir, deflate, br',
     'Accept-Language: ' : 'en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7',
 }
