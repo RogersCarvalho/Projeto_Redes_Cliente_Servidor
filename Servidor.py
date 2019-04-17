@@ -68,19 +68,6 @@ def requestMessage (con,cliente,extensionDict,shareFolder):
             fileByte = file.read()
             index = filepath.rfind('.')
             keyExtension = filepath[index:]
-            
-        elif os.path.isdir(shareFolder + filepath):
-            
-            files = os.listdir(shareFolder + filepath)
-            createListHtml(filepath,files,shareFolder)
-            
-            keyExtension = '.isdir'
-            
-            file = open(shareFolder+'/temp/listDir.html','rb')
-            fileByte = file.read()
-            respostaString = '\nHTTP/1.1 200 okkk! \n'
-            
-            
         else:
             file = open('servConfig/404.html','rb')
             respostaString = '\nHTTP/1.1 404 Not Found! \r\n'
@@ -104,19 +91,6 @@ def requestMessage (con,cliente,extensionDict,shareFolder):
         con.sendall( respostaString.encode('utf-8') + fileByte )
     con.close()
 
-
-def createListHtml(filePath,files,shareFolder):
-    file = open(shareFolder + '/temp/listDir.html','w')
-    file.write('<html>')
-    file.write('<head><title>listDir</title></head>')
-    file.write('<body>')
-    file.write('<h1>MUTHERFUCKER PAGES</H1>')
-    for fileName in files:
-        file.write('<a href="' + filePath + '/'+fileName+'">'+fileName+'</a><br>')
-
-    file.write('</body>')
-    file.write('</html>')
-    file.close()
     
 request = {}
 host = 'localhost'#host = '0.0.0.0'
