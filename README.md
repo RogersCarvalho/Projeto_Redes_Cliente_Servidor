@@ -1,3 +1,3 @@
 # Projeto_Redes_Cliente_Servidor
 
-Trabalho disciplian de redes de computadores: Cliente-Servidor
+Trabalho disciplina de redes de computadores: Cliente-Servidor
